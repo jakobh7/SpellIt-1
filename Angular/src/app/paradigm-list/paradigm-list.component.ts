@@ -31,6 +31,13 @@ export class ParadigmListComponent implements OnInit {
     this.location.back();
   }
 
+  getHeaderWord(){
+    return this.data.getParadigmListHeaderWord();
+  }
+  getNewParadigmWord(){
+    return this.data.getParadigmListNewParadigmWord();
+  }
+
   deleteLanguage(){
     if (confirm("Are you sure you want to delete language: " + this.language_name + "?")){
       this.data.deleteLanguage(this.language_name).subscribe();
@@ -45,7 +52,7 @@ export class ParadigmListComponent implements OnInit {
       var fileContents= data;
       this.saveTextAsFile(fileContents, this.language_name + ".aff");
       x.style.display = "none";
-      });  
+      });
   }
 
   // code adapted from https://codepen.io/sandeep821/pen/JKaYZq

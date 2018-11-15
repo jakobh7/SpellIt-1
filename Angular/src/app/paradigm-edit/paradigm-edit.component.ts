@@ -30,7 +30,7 @@ export class ParadigmEditComponent implements OnInit {
   	this.forms$ = [];
   	this.roots$ = [];
   }
-  
+
   getParadigmSlots(): void{
   	this.data.getParadigmSlots(this.paradigm_name).subscribe(
   		data => this.slots$ = data["paradigm_slots"]);
@@ -92,5 +92,18 @@ export class ParadigmEditComponent implements OnInit {
       + this.paradigm_name +"?")){
       this.data.deleteParadigm(this.paradigm_name).subscribe();
     }
+  }
+
+  getHeaderOneWord(){
+    return this.data.getParadigmEditHeaderOneWord();
+  }
+  getHeaderTwoWord(){
+    return this.data.getParadigmEditHeaderTwoWord();
+  }
+  getHeaderThreeWord(){
+    return this.data.getParadigmEditHeaderThreeWord();
+  }
+  getAddRootWord(){
+    return this.data.getParadigmEditAddRootWord();
   }
 }

@@ -25,6 +25,13 @@ export class LanguageAddComponent implements OnInit {
     );
   }
 
+  getHeaderWord(){
+    return this.data.getLanguageAddHeaderWord();
+  }
+  getPlaceholderWord(){
+    return this.data.getLanguageAddPlaceholderWord();
+  }
+
   goBack(): void {
     this.location.back();
   }

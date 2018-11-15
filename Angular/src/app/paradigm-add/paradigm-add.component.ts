@@ -13,8 +13,8 @@ export class ParadigmAddComponent implements OnInit {
   paradigmName: string;
   slotRawList: string;
   constructor(
-    private data: DataService, 
-    private router: Router, 
+    private data: DataService,
+    private router: Router,
     private location: Location
     ) {}
 
@@ -29,5 +29,15 @@ export class ParadigmAddComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  getHeaderWord(){
+    return this.data.getParadigmAddHeaderWord();
+  }
+  getParadigmNamePlaceholderWord(){
+    return this.data.getParadigmAddParadigmNamePlaceholderWord();
+  }
+  getInputPlaceholderWord(){
+    return this.data.getParadigmAddInputPlaceholderWord();
   }
 }

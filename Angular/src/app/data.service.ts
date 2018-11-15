@@ -83,4 +83,44 @@ export class DataService {
     });
   }
 
+  getLanguageListHeader(){
+    return "Language List";
+  }
+  getLanguageListAddLanguage(){
+    return "Add a New Language";
+  }
+  getLanguageAddHeaderWord(){
+    return "Add A Language";
+  }
+  getLanguageAddPlaceholderWord(){
+    return "Language Name";
+  }
+  getParadigmListHeaderWord(){
+    return "Paradigm List";
+  }
+  getParadigmListNewParadigmWord(){
+    return "Add a New Paradigm";
+  }
+  getParadigmAddHeaderWord(){
+    return "Add New Paradigm";
+  }
+  getParadigmAddParadigmNamePlaceholderWord(){
+    return "Paradigm Name";
+  }
+  getParadigmAddInputPlaceholderWord(){
+    return "Slot list separated by commas e.g. slot1,slot2,slot3"
+  }
+  getParadigmEditHeaderOneWord(){
+    return "Root Words";
+  }
+  getParadigmEditHeaderTwoWord(){
+    return "Word Forms";
+  }
+  getParadigmEditHeaderThreeWord(){
+    return "Paradigm Forms";
+  }
+  getParadigmEditAddRootWord(){
+    return "Add a New Root";
+  }
+
 }

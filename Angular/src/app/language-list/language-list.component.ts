@@ -16,4 +16,11 @@ export class LanguageListComponent implements OnInit {
       data => this.languages$ = data["languages"]
     );
   }
+
+  getHeader(){
+    return this.data.getLanguageListHeader();
+  }
+  getAddLanguage(){
+    return this.data.getLanguageListAddLanguage();
+  }
 }

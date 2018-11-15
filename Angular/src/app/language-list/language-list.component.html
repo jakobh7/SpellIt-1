@@ -1,4 +1,4 @@
-<h1>Language List</h1>
+<h1>{{getHeader()}}</h1>
 
 <ul>
   <li *ngFor="let language of languages$ ">
@@ -7,7 +7,7 @@
   <li>
     <a routerLink="/language-add">
     	<i class="material-icons">add_circle_outline</i>
-    	Add a New Language
+    	{{getAddLanguage()}}
 	</a>
   </li>
 </ul>
