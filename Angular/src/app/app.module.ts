@@ -4,6 +4,7 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
+import { TranslateBarComponent } from "./translate-bar/translate-bar.component";
 import { LanguageListComponent } from "./language-list/language-list.component";
 import { ParadigmListComponent } from "./paradigm-list/paradigm-list.component";
 import { LanguageAddComponent } from "./language-add/language-add.component";
@@ -27,6 +28,7 @@ import {
   declarations: [
     AppComponent,
     SidebarComponent,
+    TranslateBarComponent,
     LanguageListComponent,
     ParadigmListComponent,
     LanguageAddComponent,
